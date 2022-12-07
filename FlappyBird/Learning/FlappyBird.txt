@@ -1,0 +1,65 @@
+animasyonlar yapıldı
+
+2.ders--
+	kus layer ->1(order layer)
+	hız sıfırlama durumu yer cekiminden dolayı
+	kusun yukarı asagı bakma durumları.
+		transform.eulerAngles = new Vector3(0, 0, 45);
+	kendi yorumum(45 derece belki biraz fazla duruyor gibi..)
+
+3.arkaplan
+ arkapanlarda istrigger colliderlar geçirgen olsun diye.
+
+^^^^ #### soldan sağa arkaplani kaydırmak
+void Update ()
+    {
+        if (gokyuzuBir.transform.position.x <= -uzunluk)
+        {
+            gokyuzuBir.transform.position += new Vector3(uzunluk * 2, 0);
+        }
+        if (gokyuzuIki.transform.position.x <= -uzunluk)
+        {
+            gokyuzuIki.transform.position += new Vector3(uzunluk * 2, 0);
+        }
+    }
+
+
+
+
+
+4.ders engeller
+engellerde rigidbody yi kod olarak ekleme gösteriyor.
+
+5.oyun sesleri
+	Destroy(this);
+
+play on awaker---oyun basladıgında
+
+6.ana menu olusturma
+	22:25
+	Invoke("anaMenuyeDon",2);
+
+bu kodda belli bir saniye geçtikten sonra oradaki metodu çagırıyor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
